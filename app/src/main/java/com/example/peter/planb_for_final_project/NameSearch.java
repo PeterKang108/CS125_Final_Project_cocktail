@@ -6,25 +6,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class IngredientSearch extends AppCompatActivity {
-    String ingredient;
-    EditText ingredientInput;
+public class NameSearch extends AppCompatActivity {
+    String name;
+    EditText nameInput;
 
     Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ingredient_search);
+        setContentView(R.layout.activity_name_search);
 
-        ingredientInput = (EditText) findViewById(R.id.ingredientInput);
+        nameInput = (EditText) findViewById(R.id.nameInput);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ingredient = ingredientInput.getText().toString();
+                name = nameInput.getText().toString();
 
-                showThem(ingredient);
+                showThem(name);
             }
         });
     }

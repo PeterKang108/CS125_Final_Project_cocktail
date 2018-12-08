@@ -23,7 +23,19 @@
             android:name=".Ingredient"
             android:label="@string/title_activity_ingredient"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".IngredientSearch"></activity>
+        <activity android:name=".NameSearch" />
+        <activity
+            android:name=".Glass"
+            android:label="@string/title_activity_glass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Alcohol"
+            android:label="@string/title_activity_alcohol"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Category"
+            android:label="@string/title_activity_category"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

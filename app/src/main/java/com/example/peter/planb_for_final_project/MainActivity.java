@@ -67,10 +67,6 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-    public void openIngredient() {
-        Intent intent = new Intent(this, Ingredient.class);
-        startActivity(intent);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -79,17 +75,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_cate) {
-            // Handle the camera action
+            openCategory();
         } else if (id == R.id.nav_ingredient) {
             openIngredient();
         } else if (id == R.id.nav_glass) {
-
+            openGlass();
         } else if (id == R.id.nav_alcohol) {
-
+            openAlcohol();
         } else if (id == R.id.nav_fav) {
 
         } else if (id == R.id.nav_search) {
-
+            openNameSearch();
         } else if (id == R.id.nav_create) {
 
         }
@@ -98,4 +94,30 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void openIngredient() {
+        Intent intent = new Intent(this, Ingredient.class);
+        startActivity(intent);
+    }
+
+    public void openGlass() {
+        Intent intent = new Intent(this, Glass.class);
+        startActivity(intent);
+    }
+
+    public void openAlcohol() {
+        Intent intent = new Intent(this, Alcohol.class);
+        startActivity(intent);
+    }
+
+    public void openCategory() {
+        Intent intent = new Intent(this, Category.class);
+        startActivity(intent);
+    }
+
+    public void openNameSearch() {
+        Intent intent = new Intent(this, NameSearch.class);
+        startActivity(intent);
+    }
+
 }
