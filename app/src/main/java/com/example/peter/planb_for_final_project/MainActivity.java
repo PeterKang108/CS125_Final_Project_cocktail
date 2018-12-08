@@ -1,5 +1,6 @@
 package com.example.peter.planb_for_final_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -66,6 +67,10 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+    public void openIngredient() {
+        Intent intent = new Intent(this, Ingredient.class);
+        startActivity(intent);
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -76,7 +81,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_cate) {
             // Handle the camera action
         } else if (id == R.id.nav_ingredient) {
-
+            openIngredient();
         } else if (id == R.id.nav_glass) {
 
         } else if (id == R.id.nav_alcohol) {
