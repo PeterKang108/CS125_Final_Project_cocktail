@@ -36,7 +36,7 @@ public class Ingredient extends AppCompatActivity {
         });
     }
     public void openIngredientSearch() {
-        Intent intent = new Intent(this, MainNameSearch.class);
+        Intent intent = new Intent(this, IngredientSearch.class);
         startActivity(intent);
     }
 }

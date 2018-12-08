@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class SearchCategory extends AppCompatActivity {
+public class CategorySearch extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

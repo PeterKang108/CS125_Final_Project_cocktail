@@ -1,13 +1,16 @@
 package com.example.peter.planb_for_final_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageButton;
 
 public class Alcohol extends AppCompatActivity {
+    private ImageButton button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +27,18 @@ public class Alcohol extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        button = (ImageButton) findViewById(R.id.AlcoholSearch);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAlcoholSearch();
+            }
+        });
+    }
+
+    public void openAlcoholSearch() {
+        Intent intent = new Intent(this, AlcoholSearch.class);
+        startActivity(intent);
     }
 }
