@@ -2,9 +2,6 @@ package com.example.peter.planb_for_final_project;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -116,7 +113,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void openNameSearch() {
-        Intent intent = new Intent(this, NameSearch.class);
+        Intent intent = new Intent(this, MainNameSearch.class);
         startActivity(intent);
     }
 

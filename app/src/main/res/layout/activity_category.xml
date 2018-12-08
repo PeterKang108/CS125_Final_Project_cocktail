@@ -54,4 +54,11 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
+    <ImageButton
+        android:id="@+id/searchCategory"
+        android:layout_width="79dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
 </android.support.design.widget.CoordinatorLayout>

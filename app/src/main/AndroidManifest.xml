@@ -23,7 +23,7 @@
             android:name=".Ingredient"
             android:label="@string/title_activity_ingredient"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".NameSearch" />
+        <activity android:name=".MainNameSearch" />
         <activity
             android:name=".Glass"
             android:label="@string/title_activity_glass"
@@ -35,7 +35,8 @@
         <activity
             android:name=".Category"
             android:label="@string/title_activity_category"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SearchCategory"></activity>
     </application>
 
 </manifest>
