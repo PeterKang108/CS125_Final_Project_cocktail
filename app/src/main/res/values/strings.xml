@@ -14,4 +14,13 @@
     <string name="alcoholic_type">
         "Alcoholic\n\n""Non alcoholic\n\n""Optional alcohol\n\n""null\n\n"
     </string>
+    <string name="glass_type">
+        "Highball glass\n\n""Cocktail glass\n\n""Old-fashioned glass\n\n""Collins glass\n\n"
+        "Pousse cafe glass\n\n""Champagne flute\n\n""Whiskey sour glass\n\n""Brandy snifter\n\n"
+        "White wine glass\n\n""Nick and Nora Glass\n\n""Hurricane glass\n\n""Coffee mug\n\n"
+        "Shot glass\n\n""Jar""Irish coffee cup\n\n""Punch bowl\n\n""Pitcher\n\n""Pint glass\n\n"
+        "Copper Mug\n\n""Wine Glass\n\n""Cordial glass\n\n""Beer mug\n\n"
+        "Margarita\/Coupette glass\n\n""Beer pilsner\n\n""Beer Glass\n\n""Parfait glass\n\n"
+        "Mason jar\n\n""Margarita glass\n\n""Martini Glass\n\n""Balloon Glass\n\n""Coupe Glass\n\n"
+    </string>
 </resources>

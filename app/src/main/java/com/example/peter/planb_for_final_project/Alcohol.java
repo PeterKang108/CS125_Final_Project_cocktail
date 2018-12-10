@@ -7,10 +7,14 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Alcohol extends AppCompatActivity {
-
+    Button alc;
+    Button non;
+    Button opt;
+    Button nu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,5 +30,6 @@ public class Alcohol extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
     }
 }

@@ -19,7 +19,7 @@ public class IngredientSearch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingredient_search);
 
-        ingredientInput = (EditText) findViewById(R.id.nameInput);
+        ingredientInput = (EditText) findViewById(R.id.IngredientInput);
         result = (TextView) findViewById(R.id.tvResultIngredient);
         button = (Button) findViewById(R.id.buttonIngredient);
         button.setOnClickListener(new View.OnClickListener() {
