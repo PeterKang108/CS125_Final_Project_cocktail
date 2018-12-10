@@ -27,6 +27,7 @@ public class Ingredient extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         button = (ImageButton) findViewById(R.id.search);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
