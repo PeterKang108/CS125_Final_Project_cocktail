@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_search) {
             openNameSearch();
-        } else if (id == R.id.nav_create) {
+        } else if (id == R.id.nav_random) {
 
         }
 

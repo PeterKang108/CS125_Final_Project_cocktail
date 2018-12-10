@@ -7,19 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class MainNameSearch extends AppCompatActivity {
     String name;
     EditText nameInput;
     TextView result;
-    String data = "";
     Button button;
 
     @Override
@@ -34,32 +26,10 @@ public class MainNameSearch extends AppCompatActivity {
             public void onClick(View v) {
                 name = nameInput.getText().toString();
 
-                showThem(name);
+                
             }
         });
 
         result = (TextView) findViewById(R.id.tvResult);
-    }
-
-    private void showThem(String name) {
-        //String data = "";
-        try {
-            String searchBase = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=";
-            URL searchResult = new URL(searchBase + name);
-            HttpURLConnection search = (HttpURLConnection) searchResult.openConnection();
-            InputStream result = search.getInputStream();
-            BufferedReader readResult = new BufferedReader(new InputStreamReader(result));
-            String line = "";
-            while (line != null) {
-                line = readResult.readLine();
-                data = data + line;
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        result.setText("Result:\t" + data);
-        //System.out.println(data);
     }
 }
