@@ -35,7 +35,7 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -45,10 +45,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:id="@+id/tvResult"
+                android:id="@+id/tvResultName"
                 android:layout_width="wrap_content"
                 android:layout_height="184dp"
-                android:layout_below="@id/button"
+                android:layout_below="@id/buttonName"
                 android:layout_marginBottom="143dp"
                 android:textSize="14sp" />
 

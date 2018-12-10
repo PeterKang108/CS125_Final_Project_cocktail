@@ -20,13 +20,13 @@ public class MainNameSearch extends AppCompatActivity {
         setContentView(R.layout.activity_name_search);
 
         nameInput = (EditText) findViewById(R.id.nameInput);
-        result = (TextView) findViewById(R.id.tvResult);
-        button = (Button) findViewById(R.id.button);
+        result = (TextView) findViewById(R.id.tvResultName);
+        button = (Button) findViewById(R.id.buttonName);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 name = nameInput.getText().toString();
-                showThem showResult = new showThem();
+                ShowResultByName showResult = new ShowResultByName();
                 showResult.execute();
             }
         });

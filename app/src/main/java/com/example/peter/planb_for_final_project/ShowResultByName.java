@@ -10,7 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class showThem extends AsyncTask<Void, Void, Void> {
+public class ShowResultByName extends AsyncTask<Void, Void, Void> {
     String data = "";
     @Override
     protected Void doInBackground(Void... voids) {
@@ -31,7 +31,7 @@ public class showThem extends AsyncTask<Void, Void, Void> {
             e.printStackTrace();
         }
         //result.setText("Result:/n" + data);
-        System.out.println(data);
+        //System.out.println(data);
         //return data;
         return null;
     }

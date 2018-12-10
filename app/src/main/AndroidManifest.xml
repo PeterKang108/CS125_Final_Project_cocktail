@@ -41,7 +41,6 @@
         <activity android:name=".CategorySearch" />
         <activity android:name=".GlassSearch" />
         <activity android:name=".IngredientSearch" />
-        <activity android:name=".AlcoholSearch"></activity>
     </application>
 
 </manifest>
