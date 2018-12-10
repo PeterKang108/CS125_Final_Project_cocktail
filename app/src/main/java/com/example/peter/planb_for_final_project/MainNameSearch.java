@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,8 +18,8 @@ import java.net.URL;
 public class MainNameSearch extends AppCompatActivity {
     String name;
     EditText nameInput;
-    String result;
-
+    TextView result;
+    String data = "";
     Button button;
 
     @Override
@@ -36,10 +37,12 @@ public class MainNameSearch extends AppCompatActivity {
                 showThem(name);
             }
         });
+
+        result = (TextView) findViewById(R.id.tvResult);
     }
 
     private void showThem(String name) {
-        String data = "";
+        //String data = "";
         try {
             String searchBase = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=";
             URL searchResult = new URL(searchBase + name);
@@ -56,7 +59,7 @@ public class MainNameSearch extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        result = data;
-        System.out.println(data);
+        result.setText("Result:\t" + data);
+        //System.out.println(data);
     }
 }
