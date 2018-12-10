@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 
 public class MainNameSearch extends AppCompatActivity {
-    String name;
+    public static String name;
     EditText nameInput;
-    TextView result;
+    public static TextView result;
     Button button;
 
     @Override
@@ -20,16 +20,16 @@ public class MainNameSearch extends AppCompatActivity {
         setContentView(R.layout.activity_name_search);
 
         nameInput = (EditText) findViewById(R.id.nameInput);
+        result = (TextView) findViewById(R.id.tvResult);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 name = nameInput.getText().toString();
-
-                
+                showThem showResult = new showThem();
+                showResult.execute();
             }
         });
 
-        result = (TextView) findViewById(R.id.tvResult);
     }
 }
