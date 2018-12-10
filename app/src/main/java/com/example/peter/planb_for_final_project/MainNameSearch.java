@@ -17,6 +17,7 @@ import java.net.URL;
 public class MainNameSearch extends AppCompatActivity {
     String name;
     EditText nameInput;
+    String result;
 
     Button button;
 
@@ -55,7 +56,7 @@ public class MainNameSearch extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        result = data;
         System.out.println(data);
     }
 }
