@@ -34,7 +34,7 @@ public class Alcohol extends AppCompatActivity {
         alc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
             }
         });
 
