@@ -40,7 +40,7 @@ public class Glass extends AppCompatActivity {
 
     }
     public void openGlassSearch() {
-        Intent intent = new Intent(this, GlassSearch.class);
+        Intent intent = new Intent(this, NewGlassSearchResult.class);
         startActivity(intent);
     }
 }
