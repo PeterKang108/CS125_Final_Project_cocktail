@@ -30,6 +30,13 @@ public class Alcohol extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        alc = (Button) findViewById(R.id.Alcoholic);
+        alc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
 
     }
 }
