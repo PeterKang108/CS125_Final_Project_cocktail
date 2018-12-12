@@ -64,8 +64,28 @@ public class NewCategorySearchResult extends AppCompatActivity
 
         childRows = new ArrayList<ChildRowCategorySearch>();
         childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
-                , "Pitcher"));
-        parentRow = new ParentRowCategorySearch("Other", childRows);
+                , "Ordinary Drink"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Cocktail"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Milk/Float/Shake"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Cocoa"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Shot"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Coffee/Tee"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Homemade Liqueur"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Punch/Party Drink"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Beer"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Soft Drink/Soda"));
+        childRows.add(new ChildRowCategorySearch(R.drawable.ic_launcher_foreground
+                , "Other/Unknown"));
+        parentRow = new ParentRowCategorySearch("Category", childRows);
         parentList.add(parentRow);
 
     }
