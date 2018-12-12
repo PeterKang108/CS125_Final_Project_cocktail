@@ -37,7 +37,7 @@ public class Category extends AppCompatActivity {
         });
     }
     public void openCategorySearch() {
-        Intent intent = new Intent(this, CategorySearch.class);
+        Intent intent = new Intent(this, NewCategorySearchResult.class);
         startActivity(intent);
     }
 }
