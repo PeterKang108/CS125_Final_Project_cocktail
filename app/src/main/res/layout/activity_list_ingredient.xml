@@ -18,20 +18,20 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textViewHead"
+                android:id="@+id/textViewHeadi"
                 android:text="Result"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textViewDesc"
+                android:id="@+id/textViewDesci"
                 android:text="Description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-            
-            <ImageView
-                android:id="@+id/cocktailImage"
+
+            <TextView
+                android:id="@+id/textViewType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

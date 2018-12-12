@@ -46,6 +46,11 @@
             android:name=".name_search_result"
             android:label="name-search_result"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ingredient_search_result"
+            android:label="ingredient_search_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".CategorySearch" />
         <activity android:name=".GlassSearch" />
         <activity android:name=".IngredientSearch" />

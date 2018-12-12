@@ -14,18 +14,18 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class cocktail_result_adaptor extends RecyclerView.Adapter<cocktail_result_adaptor.ViewHolder> {
+public class ingredient_result_adapter extends RecyclerView.Adapter<ingredient_result_adapter.ViewHolder> {
 
-    private List<CocktailPreview> result;
+    private List<IngredientPreview> result;
     private Context context;
 
-    public cocktail_result_adaptor(List<CocktailPreview> setResult, Context setContext) {
+    public ingredient_result_adapter(List<IngredientPreview> setResult, Context setContext) {
         this.result = setResult;
         this.context = setContext;
         if (result == null) {
-            CocktailPreview noResult = new CocktailPreview("NoResult",
+            IngredientPreview noResult = new IngredientPreview("NoResult",
                     "please try again" ,
-                     "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1544588301&di=ae3d925e18995a5ac18de16b73fd2faf&src=http://www.17qq.com/img_qqtouxiang/7379105.jpeg" );
+                    "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1544588301&di=ae3d925e18995a5ac18de16b73fd2faf&src=http://www.17qq.com/img_qqtouxiang/7379105.jpeg" );
             result = new ArrayList<>();
             result.add(noResult);
         }
@@ -35,27 +35,17 @@ public class cocktail_result_adaptor extends RecyclerView.Adapter<cocktail_resul
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_list_cocktail, parent,false);
+                .inflate(R.layout.activity_list_ingredient, parent,false);
         return new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        CocktailPreview cocktailPreview = result.get(position);
+        IngredientPreview ingredientPreview = result.get(position);
 
-        holder.textViewHead.setText(cocktailPreview.getName());
-        holder.textViewDesc.setText(cocktailPreview.getDescription());
-
-        Picasso.with(context)
-                .load(cocktailPreview.getImageURL())
-                .into(holder.imageView);
-
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        holder.textViewHead.setText(ingredientPreview.getName());
+        holder.textViewDesc.setText(ingredientPreview.getDescription());
+        holder.textViewType.setText(ingredientPreview.getType());
     }
 
     @Override
@@ -68,15 +58,15 @@ public class cocktail_result_adaptor extends RecyclerView.Adapter<cocktail_resul
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView textViewHead;
+        public TextView textViewType;
         public TextView textViewDesc;
-        public ImageView imageView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textViewHead = (TextView) itemView.findViewById(R.id.textViewHead);
-            textViewDesc = (TextView) itemView.findViewById(R.id.textViewDesc);
-            imageView = (ImageView) itemView.findViewById(R.id.cocktailImage);
+            textViewHead = (TextView) itemView.findViewById(R.id.textViewHeadi);
+            textViewDesc = (TextView) itemView.findViewById(R.id.textViewDesci);
+            textViewType = (TextView) itemView.findViewById(R.id.textViewType);
         }
     }
 
