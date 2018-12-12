@@ -1,10 +1,7 @@
 package com.example.peter.planb_for_final_project;
 
 import android.os.AsyncTask;
-import com.google.gson.stream.JsonReader;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,10 +12,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static com.example.peter.planb_for_final_project.GsonHelperFunctions.CocktailResults;
+import static com.example.peter.planb_for_final_project.GsonHelperFunctions.CocktailResultsPreview;
 
 public class ShowResultByName extends AsyncTask<Void, Void, Void> {
     String data = "";
-    private JSONObject cocktailresult;
+
     @Override
     protected Void doInBackground(Void... voids) {
         try {
@@ -48,6 +46,6 @@ public class ShowResultByName extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        MainNameSearch.result.setText(CocktailResults(this.data));
+        MainNameSearch.previewResultsList = CocktailResultsPreview(CocktailResults(data));
     }
 }

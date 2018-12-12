@@ -1,5 +1,6 @@
 package com.example.peter.planb_for_final_project;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,8 +29,14 @@ public class IngredientSearch extends AppCompatActivity {
                 Ingredient = ingredientInput.getText().toString();
                 ShowIngredientResult showResult = new ShowIngredientResult();
                 showResult.execute();
+                openIngredientSearchResult();
             }
         });
 
     }
+    public void openIngredientSearchResult() {
+        Intent intent = new Intent(this, ingredient_search_result.class);
+        startActivity(intent);
+    }
+
 }

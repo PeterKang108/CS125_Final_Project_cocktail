@@ -184,4 +184,16 @@ public class Cocktail {
         this.measure15 = measure15;
         this.date = date;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCategory() {
+        return Category;
+    }
+
+    public String getThumbnailURL() {
+        return thumbnailURL;
+    }
 }
