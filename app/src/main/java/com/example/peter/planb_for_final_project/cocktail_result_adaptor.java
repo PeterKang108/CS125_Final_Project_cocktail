@@ -69,7 +69,8 @@ public class cocktail_result_adaptor extends RecyclerView.Adapter<cocktail_resul
                     holder.alcoholic.setText(cocktailInfo.getAlcohol());
                     holder.instructions.setText(cocktailInfo.getInstructions());
                     for (int i = 0; i < 15; i++) {
-                        ingredientsAndMeasures = cocktailInfo.getIngredientsAndMeasures()[i] + "\n";
+                        ingredientsAndMeasures = ingredientsAndMeasures +
+                                cocktailInfo.getIngredientsAndMeasures()[i] + "\n";
                     }
                     holder.ingredientsMeasures.setText(ingredientsAndMeasures);
                     open.set(0, false);
