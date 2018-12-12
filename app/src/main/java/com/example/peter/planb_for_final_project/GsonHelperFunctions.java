@@ -43,4 +43,52 @@ public class GsonHelperFunctions {
         }
         return result;
     }
+    public static List<DrinkFilteredByCatergoryResult> FilterCategoryResults(String data) {
+        Gson gson = new Gson();
+        DrinkFilteredByCategory result = gson.fromJson(data, DrinkFilteredByCategory.class);
+        if (result == null) {
+            return null;
+        }
+        return result.getFilteredByCatergoryResults();
+    }
+    //convert List<DrinkFilteredByCategoryResult> to List<CocktailPreview>
+    public static List<CocktailPreview> ConvertCategoryResultstoCRP(
+            List<DrinkFilteredByCatergoryResult> data) {
+        List<CocktailPreview> result = new ArrayList<>();
+        if (data == null) {
+            return null;
+        }
+        for (int i = 0; i < data.size(); i++) {
+            CocktailPreview newOne = new CocktailPreview(data.get(i).getName(),
+                    CategorySearch.category, data.get(i).getImgURL());
+            result.add(newOne);
+        }
+        return result;
+    }
+    public static List<CocktailPreview> ConvertGlassResultstoCRP(
+            List<DrinkFilteredByCatergoryResult> data) {
+        List<CocktailPreview> result = new ArrayList<>();
+        if (data == null) {
+            return null;
+        }
+        for (int i = 0; i < data.size(); i++) {
+            CocktailPreview newOne = new CocktailPreview(data.get(i).getName(),
+                    GlassSearch.glass, data.get(i).getImgURL());
+            result.add(newOne);
+        }
+        return result;
+    }
+    public static List<CocktailPreview> ConvertAlcoholResultstoCRP(
+            List<DrinkFilteredByCatergoryResult> data) {
+        List<CocktailPreview> result = new ArrayList<>();
+        if (data == null) {
+            return null;
+        }
+        for (int i = 0; i < data.size(); i++) {
+            CocktailPreview newOne = new CocktailPreview(data.get(i).getName(),
+                    Alcohol.type, data.get(i).getImgURL());
+            result.add(newOne);
+        }
+        return result;
+    }
 }

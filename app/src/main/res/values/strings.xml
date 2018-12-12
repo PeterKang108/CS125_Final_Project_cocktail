@@ -28,4 +28,5 @@
     <string name="title_activity_new_glass_search_result">NewGlassSearchResult</string>
     <string name="search">Search</string>
     <string name="title_activity_new_category_search_result">NewCategorySearchResult</string>
+    <string name="title_activity_cocktail_information">cocktail_information</string>
 </resources>

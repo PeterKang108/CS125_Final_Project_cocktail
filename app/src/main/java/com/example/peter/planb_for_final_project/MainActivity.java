@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_search) {
             openNameSearch();
         } else if (id == R.id.nav_random) {
-
+            openRandom();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -117,4 +117,8 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void openRandom() {
+        Intent intent = new Intent(this, Random.class);
+        startActivity(intent);
+    }
 }

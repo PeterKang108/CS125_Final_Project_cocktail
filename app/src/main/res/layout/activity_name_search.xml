@@ -41,17 +41,6 @@
             android:layout_marginTop="50dp"
             android:text="submit"
             android:textSize="18sp" />
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:id="@+id/tvResultName"
-                android:layout_width="wrap_content"
-                android:layout_height="184dp"
-                android:layout_below="@id/buttonName"
-                android:layout_marginBottom="143dp"
-                android:textSize="14sp" />
 
-        </ScrollView>
     </LinearLayout>
 </RelativeLayout>

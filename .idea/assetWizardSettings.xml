@@ -30,17 +30,6 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
-                                      <entry key="foregroundClipartAsset">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="url" value="jar:file:/D:/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_drink_black_24dp.xml" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
@@ -58,10 +47,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="fffcf6" />
-                                      <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Sennan Cen\Desktop\round_local_drink_black_18dp.png" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="myiconforcategory" />
+                                      <entry key="backgroundLayerName" value="ic_menu1_back" />
+                                      <entry key="foregroundImage" value="C:\Users\Peter\Downloads\4b5a99bd7339ff2c5e0d0ea72325dc2f.png" />
+                                      <entry key="foregroundLayerName" value="ic_menu1_fore" />
+                                      <entry key="outputName" value="menupic1" />
                                     </map>
                                   </option>
                                 </PersistentState>

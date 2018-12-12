@@ -79,11 +79,5 @@
         android:text="Optional alcoholic"
         android:layout_marginTop="350dp"/>
 
-    <Button
-        android:id="@+id/nullForAlcoholic"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:text="null"
-        android:layout_marginTop="423dp"/>
 
 </android.support.design.widget.CoordinatorLayout>

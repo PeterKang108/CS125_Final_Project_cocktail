@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="199dp"
         android:text="Welcome to\n Cocktail Party!"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
@@ -33,6 +33,11 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="22dp"
-        android:text="Create and Design by\n Shuhao Kang\n Sennan Cen" />
+        android:text="Designed and Created by\n Shuhao Kang\n Sennan Cen" />
+
+    <ImageView
+        android:id="@+id/menu_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

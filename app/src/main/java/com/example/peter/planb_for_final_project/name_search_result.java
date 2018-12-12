@@ -21,8 +21,26 @@ public class name_search_result extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.search_result_name);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        adapter = new cocktail_result_adaptor(MainNameSearch.previewResultsList, this);
-        recyclerView.setAdapter(adapter);
+        if (MainNameSearch.previewResultsList != null) {
+            adapter = new cocktail_result_adaptor(MainNameSearch.ResultsInfoLists,
+                    MainNameSearch.previewResultsList, this);
+            recyclerView.setAdapter(adapter);
+        } else if (CategorySearch.previewResultsList != null) {
+            adapter = new cocktail_result_adaptor(null,
+                    CategorySearch.previewResultsList, this);
+            recyclerView.setAdapter(adapter);
+        } else if (GlassSearch.previewResultsList != null) {
+            adapter = new cocktail_result_adaptor(null,
+                    GlassSearch.previewResultsList, this);
+            recyclerView.setAdapter(adapter);
+        } else if (Alcohol.previewResultsList != null) {
+            adapter = new cocktail_result_adaptor(null,
+                    Alcohol.previewResultsList, this);
+            recyclerView.setAdapter(adapter);
+        } else if (Random.previewResultsList != null) {
+            adapter = new cocktail_result_adaptor(Random.ResultsInfoLists,
+                    Random.previewResultsList, this);
+            recyclerView.setAdapter(adapter);
+        }
     }
 }

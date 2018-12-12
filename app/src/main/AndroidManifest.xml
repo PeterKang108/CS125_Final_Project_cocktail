@@ -50,7 +50,10 @@
             android:name=".ingredient_search_result"
             android:label="ingredient_search_result"
             android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity
+            android:name=".Random"
+            android:label="Random"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CategorySearch" />
         <activity android:name=".GlassSearch" />
         <activity android:name=".IngredientSearch" />

@@ -25,9 +25,9 @@ import static com.example.peter.planb_for_final_project.GsonHelperFunctions.Cock
 public class MainNameSearch extends AppCompatActivity {
     public static String name;
     EditText nameInput;
-    public static TextView result;
     Button button;
     public static List<CocktailPreview> previewResultsList;
+    public static List<Cocktail> ResultsInfoLists;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +35,15 @@ public class MainNameSearch extends AppCompatActivity {
         setContentView(R.layout.activity_name_search);
 
         nameInput = (EditText) findViewById(R.id.nameInput);
-        result = (TextView) findViewById(R.id.tvResultName);
         button = (Button) findViewById(R.id.buttonName);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                MainNameSearch.previewResultsList = null;
+                CategorySearch.previewResultsList = null;
+                Alcohol.previewResultsList = null;
+                GlassSearch.previewResultsList = null;
+                Random.previewResultsList = null;
                 name = dealWithSpace.dealWithSpace(nameInput.getText().toString());
                 ShowResultByName showResult = new ShowResultByName();
                 showResult.execute();
@@ -48,7 +52,7 @@ public class MainNameSearch extends AppCompatActivity {
 
     }
     public void openNameSearchResult() {
-        Intent intent = new Intent(this, name_search_result.class);
+        Intent intent = new Intent(getApplication(), name_search_result.class);
         startActivity(intent);
     }
 
@@ -74,17 +78,14 @@ public class MainNameSearch extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            //result.setText("Result:/n" + data);
-            //System.out.println(data);
-            //return data;
-
             return null;
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            MainNameSearch.previewResultsList = CocktailResultsPreview(CocktailResults(data));
+            MainNameSearch.ResultsInfoLists = CocktailResults(data);
+            MainNameSearch.previewResultsList = CocktailResultsPreview(MainNameSearch.ResultsInfoLists);
             openNameSearchResult();
         }
     }

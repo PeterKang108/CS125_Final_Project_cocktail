@@ -196,4 +196,164 @@ public class Cocktail {
     public String getThumbnailURL() {
         return thumbnailURL;
     }
+
+    public int getIdDrink() {
+        return idDrink;
+    }
+
+    public String getAlcohol() {
+        return alcohol;
+    }
+
+    public String getGlass() {
+        return glass;
+    }
+
+    public String getInstructions() {
+        return instructions;
+    }
+
+    public String getIngredient1() {
+        return ingredient1;
+    }
+
+    public String getIngredient2() {
+        return ingredient2;
+    }
+
+    public String getIngredient3() {
+        return ingredient3;
+    }
+
+    public String getIngredient4() {
+        return ingredient4;
+    }
+
+    public String getIngredient5() {
+        return ingredient5;
+    }
+
+    public String getIngredient6() {
+        return ingredient6;
+    }
+
+    public String getIngredient7() {
+        return ingredient7;
+    }
+
+    public String getIngredient8() {
+        return ingredient8;
+    }
+
+    public String getIngredient9() {
+        return ingredient9;
+    }
+
+    public String getIngredient10() {
+        return ingredient10;
+    }
+
+    public String getIngredient11() {
+        return ingredient11;
+    }
+
+    public String getIngredient12() {
+        return ingredient12;
+    }
+
+    public String getIngredient13() {
+        return ingredient13;
+    }
+
+    public String getIngredient14() {
+        return ingredient14;
+    }
+
+    public String getIngredient15() {
+        return ingredient15;
+    }
+
+    public String getMeasure1() {
+        return measure1;
+    }
+
+    public String getMeasure2() {
+        return measure2;
+    }
+
+    public String getMeasure3() {
+        return measure3;
+    }
+
+    public String getMeasure4() {
+        return measure4;
+    }
+
+    public String getMeasure5() {
+        return measure5;
+    }
+
+    public String getMeasure6() {
+        return measure6;
+    }
+
+    public String getMeasure7() {
+        return measure7;
+    }
+
+    public String getMeasure8() {
+        return measure8;
+    }
+
+    public String getMeasure9() {
+        return measure9;
+    }
+
+    public String getMeasure10() {
+        return measure10;
+    }
+
+    public String getMeasure11() {
+        return measure11;
+    }
+
+    public String getMeasure12() {
+        return measure12;
+    }
+
+    public String getMeasure13() {
+        return measure13;
+    }
+
+    public String getMeasure14() {
+        return measure14;
+    }
+
+    public String getMeasure15() {
+        return measure15;
+    }
+
+    public String[] getIngredientsAndMeasures() {
+        String[] result = new String[15];
+        result[0] = ingredient1 + "\n" + measure1;
+        result[1] = ingredient2 + "\n" + measure2;
+        result[2] = ingredient3 + "\n" + measure3;
+        result[3] = ingredient4 + "\n" + measure4;
+        result[4] = ingredient5 + "\n" + measure5;
+        result[5] = ingredient6 + "\n" + measure6;
+        result[6] = ingredient7 + "\n" + measure7;
+        result[7] = ingredient8 + "\n" + measure8;
+        result[8] = ingredient9 + "\n" + measure9;
+        result[9] = ingredient10 + "\n" + measure10;
+        result[10] = ingredient11 + "\n" + measure11;
+        result[11] = ingredient12 + "\n" + measure12;
+        result[12] = ingredient13 + "\n" + measure13;
+        result[13] = ingredient14 + "\n" + measure14;
+        result[14] = ingredient15 + "\n" + measure15;
+        return result;
+    }
+
+    public String getDate() {
+        return date;
+    }
 }
