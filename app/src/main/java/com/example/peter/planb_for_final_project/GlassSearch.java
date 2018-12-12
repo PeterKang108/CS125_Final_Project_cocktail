@@ -45,6 +45,7 @@ public class GlassSearch extends AppCompatActivity {
                 CategorySearch.previewResultsList = null;
                 Alcohol.previewResultsList = null;
                 GlassSearch.previewResultsList = null;
+                Random.previewResultsList = null;
                 glass = glassInput.getText().toString();
                 ShowResultByGlass showResult = new ShowResultByGlass();
                 showResult.execute();

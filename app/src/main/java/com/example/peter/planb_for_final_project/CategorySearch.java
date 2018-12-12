@@ -44,6 +44,7 @@ public class CategorySearch extends AppCompatActivity {
                 CategorySearch.previewResultsList = null;
                 Alcohol.previewResultsList = null;
                 GlassSearch.previewResultsList = null;
+                Random.previewResultsList = null;
                 category = dealWithSpace.dealWithSpace(categoryInput.getText().toString());
                 ShowResultByCategory showResult = new ShowResultByCategory();
                 showResult.execute();
