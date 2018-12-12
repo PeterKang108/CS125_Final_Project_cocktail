@@ -56,9 +56,18 @@
 
     <ImageButton
         android:id="@+id/searchGlass"
-        android:layout_width="88dp"
-        android:layout_height="57dp"
+        android:layout_width="89dp"
+        android:layout_height="56dp"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/oldSearchGlass"
+        android:layout_width="40dp"
+        android:layout_height="43dp"
+        android:background="@drawable/ic_local_bar_black_24dp"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="right|center"
+        app:srcCompat="@drawable/ic_local_bar_black_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>
