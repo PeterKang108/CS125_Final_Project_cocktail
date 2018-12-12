@@ -24,8 +24,8 @@ public class ingredient_result_adapter extends RecyclerView.Adapter<ingredient_r
         this.context = setContext;
         if (result == null) {
             IngredientPreview noResult = new IngredientPreview("NoResult",
-                    "please try again" ,
-                    "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1544588301&di=ae3d925e18995a5ac18de16b73fd2faf&src=http://www.17qq.com/img_qqtouxiang/7379105.jpeg" );
+                    "Emmmmm" ,
+                    "please try again" );
             result = new ArrayList<>();
             result.add(noResult);
         }

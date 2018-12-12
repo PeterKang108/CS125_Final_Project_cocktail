@@ -22,13 +22,14 @@ public class cocktail_result_adaptor extends RecyclerView.Adapter<cocktail_resul
     private Context context;
     private List<Cocktail> info;
     private String ingredientsAndMeasures = "";
+    private CocktailPreview noResult;
 
     public cocktail_result_adaptor(List<Cocktail> setInfo, List<CocktailPreview> setResult, Context setContext) {
         this.result = setResult;
         this.info = setInfo;
         this.context = setContext;
         if (result == null) {
-            CocktailPreview noResult = new CocktailPreview("NoResult",
+            noResult = new CocktailPreview("NoResult",
                     "please try again" ,
                      "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1544588301&di=ae3d925e18995a5ac18de16b73fd2faf&src=http://www.17qq.com/img_qqtouxiang/7379105.jpeg" );
             result = new ArrayList<>();
