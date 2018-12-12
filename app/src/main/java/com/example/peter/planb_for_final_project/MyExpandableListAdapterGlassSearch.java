@@ -1,6 +1,7 @@
 package com.example.peter.planb_for_final_project;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -108,6 +109,15 @@ public class MyExpandableListAdapterGlassSearch extends BaseExpandableListAdapte
                 Toast.makeText(finalConvertView.getContext()
                         , childText.getText()
                         , Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //点击空白处
+                Intent intent = new Intent(finalConvertView.getContext(), Glass.class);
+                finalConvertView.getContext().startActivity(intent);
             }
         });
 

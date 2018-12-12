@@ -61,27 +61,96 @@ public class NewGlassSearchResult extends AppCompatActivity
         ParentRowGlassSearch parentRow = null;
 
         childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
-                , "This is test 1"));
+                , "Highball glass"));
         childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
-                , "This is test 2"));
-        parentRow = new ParentRowGlassSearch("First Group", childRows);
+                , "Cocktail glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Old-fashioned glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Pousse cafe glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Whiskey sour glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "White wine glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Nick and Nora glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Hurricane glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Shot glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Pint glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Wine glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Cordial glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Margarita/Coupette glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Beer Glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Parfait glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Martini glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Balloon glass"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Coupe glass"));
+        parentRow = new ParentRowGlassSearch("Glass", childRows);
         parentList.add(parentRow);
 
         childRows = new ArrayList<ChildRowGlassSearch>();
         childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
-                , "This is test 3"));
-        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
-                , "This is test 4"));
-        parentRow = new ParentRowGlassSearch("Second Group", childRows);
+                , "Mason jar"));
+        parentRow = new ParentRowGlassSearch("Jar", childRows);
         parentList.add(parentRow);
 
         childRows = new ArrayList<ChildRowGlassSearch>();
         childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
-                , "This is test 4"));
-        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
-                , "This is test 5"));
-        parentRow = new ParentRowGlassSearch("Third Group", childRows);
+                , "Beer Pilsner"));
+        parentRow = new ParentRowGlassSearch("Pilsner", childRows);
         parentList.add(parentRow);
+
+        childRows = new ArrayList<ChildRowGlassSearch>();
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Punch bowl"));
+        parentRow = new ParentRowGlassSearch("Bowl", childRows);
+        parentList.add(parentRow);
+
+        childRows = new ArrayList<ChildRowGlassSearch>();
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Coffee mug"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Copper mug"));
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "beer mug"));
+        parentRow = new ParentRowGlassSearch("Mug", childRows);
+        parentList.add(parentRow);
+
+        childRows = new ArrayList<ChildRowGlassSearch>();
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Champagne flute"));
+        parentRow = new ParentRowGlassSearch("Flute", childRows);
+        parentList.add(parentRow);
+
+        childRows = new ArrayList<ChildRowGlassSearch>();
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Brandy snifter"));
+        parentRow = new ParentRowGlassSearch("Snifter", childRows);
+        parentList.add(parentRow);
+
+        childRows = new ArrayList<ChildRowGlassSearch>();
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Jarlrish coffee cup"));
+        parentRow = new ParentRowGlassSearch("Cup", childRows);
+        parentList.add(parentRow);
+
+        childRows = new ArrayList<ChildRowGlassSearch>();
+        childRows.add(new ChildRowGlassSearch(R.drawable.ic_action_name
+                , "Pitcher"));
+        parentRow = new ParentRowGlassSearch("Other", childRows);
+        parentList.add(parentRow);
+
     }
 
     private void expandAll() {
