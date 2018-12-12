@@ -58,6 +58,13 @@ public class cocktail_result_adaptor extends RecyclerView.Adapter<cocktail_resul
         Picasso.with(context)
                 .load(cocktailPreview.getImageURL())
                 .into(holder.imageView);
+        if (cocktailPreview.equals(noResult)) {
+            holder.glass.setText(null);
+            holder.alcoholic.setText(null);
+            holder.instructions.setText(null);
+            holder.ingredientsMeasures.setText(null);
+            return;
+        }
         if (info == null) {
             return;
         }

@@ -41,6 +41,10 @@ public class name_search_result extends AppCompatActivity {
             adapter = new cocktail_result_adaptor(Random.ResultsInfoLists,
                     Random.previewResultsList, this);
             recyclerView.setAdapter(adapter);
+        } else {
+            adapter = new cocktail_result_adaptor(null,
+                    null, this);
+            recyclerView.setAdapter(adapter);
         }
     }
 }
