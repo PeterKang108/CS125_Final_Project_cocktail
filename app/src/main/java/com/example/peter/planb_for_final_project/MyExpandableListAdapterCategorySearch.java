@@ -10,18 +10,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
-public class MyExpandableListAdapterGlassSearch extends BaseExpandableListAdapter {
+public class MyExpandableListAdapterCategorySearch extends BaseExpandableListAdapter {
 
     private Context context;
-    private ArrayList<ParentRowGlassSearch> parentRowList;
-    private ArrayList<ParentRowGlassSearch> originalList;
+    private ArrayList<ParentRowCategorySearch> parentRowList;
+    private ArrayList<ParentRowCategorySearch> originalList;
 
-    public MyExpandableListAdapterGlassSearch(Context context,
-                                              ArrayList<ParentRowGlassSearch> originalList) {
+    public MyExpandableListAdapterCategorySearch(Context context,
+                                              ArrayList<ParentRowCategorySearch> originalList) {
         this.context = context;
         this.parentRowList = new ArrayList<>();
         this.parentRowList = parentRowList;
@@ -69,12 +67,12 @@ public class MyExpandableListAdapterGlassSearch extends BaseExpandableListAdapte
                              boolean isExpanded,
                              View convertView,
                              ViewGroup parent) {
-        ParentRowGlassSearch parentRow = (ParentRowGlassSearch) getGroup(groupPosition);
+        ParentRowCategorySearch parentRow = (ParentRowCategorySearch) getGroup(groupPosition);
 
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater)
                     context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.parentglass_row, null);
+            convertView = layoutInflater.inflate(R.layout.parentcategory_row, null);
         }
 
         TextView heading = (TextView) convertView.findViewById(R.id.parent_text);
@@ -89,11 +87,12 @@ public class MyExpandableListAdapterGlassSearch extends BaseExpandableListAdapte
                              boolean isLastChild,
                              View convertView,
                              ViewGroup parent) {
-        ChildRowGlassSearch childRow = (ChildRowGlassSearch) getChild(groupPosition, childPosition);
+        ChildRowCategorySearch childRow
+                = (ChildRowCategorySearch) getChild(groupPosition, childPosition);
         if (convertView == null) {
             LayoutInflater layourInflater = (LayoutInflater)
                     context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-            convertView = layourInflater.inflate(R.layout.childglass_row, null);
+            convertView = layourInflater.inflate(R.layout.childcategory_row, null);
         }
 
         ImageView childIcon = (ImageView) convertView.findViewById(R.id.child_icon);
@@ -116,7 +115,7 @@ public class MyExpandableListAdapterGlassSearch extends BaseExpandableListAdapte
             @Override
             public void onClick(View v) {
                 //点击空白处
-                Intent intent = new Intent(finalConvertView.getContext(), Glass.class);
+                Intent intent = new Intent(finalConvertView.getContext(), Category.class);
                 finalConvertView.getContext().startActivity(intent);
             }
         });
@@ -137,17 +136,17 @@ public class MyExpandableListAdapterGlassSearch extends BaseExpandableListAdapte
             parentRowList.addAll(originalList);
         }
         else {
-            for (ParentRowGlassSearch parentRow : originalList) {
-                ArrayList<ChildRowGlassSearch> childList = parentRow.getChildList();
-                ArrayList<ChildRowGlassSearch> newList = new ArrayList<ChildRowGlassSearch>();
+            for (ParentRowCategorySearch parentRow : originalList) {
+                ArrayList<ChildRowCategorySearch> childList = parentRow.getChildList();
+                ArrayList<ChildRowCategorySearch> newList = new ArrayList<ChildRowCategorySearch>();
 
-                for (ChildRowGlassSearch childRow : childList) {
+                for (ChildRowCategorySearch childRow : childList) {
                     if (childRow.getText().toLowerCase().contains(query)) {
                         newList.add(childRow);
                     }
-                } // end for (ChildRowGlassSearch childRow: childList)
+                } // end for (ChildRowCategrySearch childRow: childList)
                 if (newList.size() > 0) {
-                    ParentRowGlassSearch nParentRow = new ParentRowGlassSearch(parentRow.getName(),
+                    ParentRowCategorySearch nParentRow = new ParentRowCategorySearch(parentRow.getName(),
                             newList);
                     parentRowList.add(nParentRow);
                 }

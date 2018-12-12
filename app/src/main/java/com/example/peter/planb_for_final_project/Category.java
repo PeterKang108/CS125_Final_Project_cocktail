@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 public class Category extends AppCompatActivity {
     private ImageButton button;
+    ImageButton button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,21 @@ public class Category extends AppCompatActivity {
                 openCategorySearch();
             }
         });
+
+        button2 = (ImageButton) findViewById(R.id.oldCategorySearch);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openOldCategorySearch();
+            }
+        });
     }
     public void openCategorySearch() {
+        Intent intent = new Intent(this, NewCategorySearchResult.class);
+        startActivity(intent);
+    }
+
+    public void openOldCategorySearch() {
         Intent intent = new Intent(this, CategorySearch.class);
         startActivity(intent);
     }

@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:lineSpacingExtra="18sp"
-        android:text="Options we offer to you:\n--Ordinary Drink.\n--Cocktail\n--Milk\/Float\/Shake\n--Other\/Unknown\n--Cocoa\n--Shot\n--Coffee \/ Tea\n--Homemade Liqueur\n--Punch \/ Party Drink\n--Beer\n--Soft Drink \/ Soda\n"
+        android:text="Options we offer to you:\nOrdinary Drink.\nCocktail\nMilk\/Float\/Shake\nOther\/Unknown\nCocoa\nShot\nCoffee \/ Tea\nHomemade Liqueur\nPunch \/ Party Drink\nBeer\nSoft Drink \/ Soda\n"
+        android:textAlignment="center"
         android:textSize="24sp" />
 
 </android.support.v4.widget.NestedScrollView>

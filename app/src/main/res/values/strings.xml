@@ -27,4 +27,5 @@
     <string name="search_hint">Search Me</string>
     <string name="title_activity_new_glass_search_result">NewGlassSearchResult</string>
     <string name="search">Search</string>
+    <string name="title_activity_new_category_search_result">NewCategorySearchResult</string>
 </resources>

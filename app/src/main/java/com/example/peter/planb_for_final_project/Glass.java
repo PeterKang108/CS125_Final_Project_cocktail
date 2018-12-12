@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 
 public class Glass extends AppCompatActivity {
     ImageButton button;
+    ImageButton button2;
 
 
     @Override
@@ -38,9 +39,22 @@ public class Glass extends AppCompatActivity {
             }
         });
 
+        button2 = (ImageButton) findViewById(R.id.oldSearchGlass);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openOldGlassSearch();
+            }
+        });
+
     }
     public void openGlassSearch() {
         Intent intent = new Intent(this, NewGlassSearchResult.class);
+        startActivity(intent);
+    }
+
+    public void openOldGlassSearch() {
+        Intent intent = new Intent(this, GlassSearch.class);
         startActivity(intent);
     }
 }
